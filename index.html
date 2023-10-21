@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lista de Series de Televisión</title>
+  <title>Las mejores series de la historia</title>
   <!-- Incluye el CSS de Bootstrap para estilos -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
@@ -9,23 +9,25 @@
   <div class="container">
     <h1>Lista de Series de Televisión</h1>
     <table class="table">
-      <thead>
+    <thead class="thead-dark">
         <tr>
+          <th>ID</th>
           <th>Nombre</th>
           <th>Canal</th>
           <th>Temporadas</th>
         </tr>
       </thead>
-      <tbody id="series">
-
-      </tbody>
+      <tbody id="tabla_series"></tbody>
+      
     </table>
+    <div class="row justify-content-end">
+      <h5 class="col-4"><strong>Promedio temporadas:</strong></h5>
+      <h5 class="col-4" id="season_average"><strong></strong></h5>
+  </div>
+    
   </div>
 
-  <!-- Incluye tu archivo TypeScript aquí (asegúrate de proporcionar la ruta correcta) -->
-  <script type="module" src="./scripts/main.js"></script>
-  <script type="module" src="./scripts/serie.js" ></script>
-  <script type="module" src="./scripts/data.js" ></script>
-
+  
+<script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
