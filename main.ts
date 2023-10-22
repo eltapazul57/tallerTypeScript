@@ -61,16 +61,12 @@ function myFunction(serie: Serie) {
       cardImage.setAttribute("alt", serie.name);
     }
     if (linkButton) {
+      
       // Agrega el enlace al botón "Conoce más" y abre en una nueva ventana
       linkButton.innerHTML = "Conoce más";
       linkButton.setAttribute("href", serie.link);
-      linkButton.setAttribute("target", "_blank");
 
-      // Agregar el evento click al botón para abrir el enlace
-      linkButton.addEventListener('click', function(e) {
-        e.preventDefault(); // Evita la acción predeterminada
-        window.open(serie.link, '_blank'); // Abre el enlace en una nueva ventana
-      });
+      
     }
   } else {
     // Si no existe una tarjeta, crea una nueva
